@@ -1,0 +1,43 @@
+-----------------------------------------------------------------------------------------------------------
+preparando ambiente ubuntu:
+
+pip é um sistema de gerenciamento de pacotes usado para instalar e gerenciar pacotes de software escritos na linguagem de programação Python. Muitos pacotes podem ser encontrados no Python Package Index (PyPI).
+instalando o pip:
+sudo apt-get install python-pip
+
+o virtualenv gera ambientes virtuais para python
+instalando o virtualenv:
+pip install virtualenv
+
+para criar um ambiente virtual é necessário utilizar o comando:
+virtualenv --system-site-packages --always-copy <nome-do-ambiente-virtual>
+
+para inicializar o ambiente virtual criado no passo anterior, precisamos entar na pasta do ambiente criado e executar o comando:
+source bin/activate
+para encerrae o ambiente virtual é só executar o comando:
+deactivate
+
+-----------------------------------------------------------------------------------------------------------
+
+a linguagem é multi paradigma e o bloco de código é definido de acordo com a identação.
+formatação de strings:
+var1 = "param1"
+var2 = "param2"
+print "texto %s mais texto %s." (var1, var2)
+
+manipulação de arquivos:
+#abre o arquivo para leitura
+target = open(filename)
+#abre o arquivo para escrita
+target = open(filename, 'w')
+#Fecha e salva o arquivo
+target.close()
+#lê todo o arquivo e pode atribuir o resultado a uma variável
+target.read()
+#Lê apenas uma linha do arquivo texto
+target.readline()
+#limpa o arquivo
+target.truncate()
+#escreve "stuff" no arquivo
+target.write('stuff')
+
