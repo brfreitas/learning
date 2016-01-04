@@ -1,0 +1,38 @@
+Instalando o django
+pip install Django
+
+https://docs.djangoproject.com/en/1.9/intro/tutorial01/
+comando para criar um projeto:
+django-admin startproject <mysite>
+
+mysite/
+    manage.py
+    mysite/
+        __init__.py
+        settings.py
+        urls.py
+        wsgi.py
+		
+levantando o servidor para teste 
+python manage.py runserver
+visivel na rede e especificando a porta
+python manage.py runserver 0.0.0.0:8000
+
+referencia do runserver https://docs.djangoproject.com/en/1.9/ref/django-admin/#django-admin-runserver
+
+Projeto vs. apps
+app é um aplicação web q faz alguma coisa por exemplo, um blog, já um projeto é uma coleção de configurações e aplicações.
+
+Criando um app
+python manage.py startapp <nome-app>
+
+-----------------------
+para criar as tabelas automaticamente:
+python manage.py migrate
+varrer a aplicação procurando modificações nos models
+python manage.py makemigrations <nome-app>
+gera os sqls das mudanças
+python manage.py sqlmigrate polls 0001
+python manage.py shell
+
+

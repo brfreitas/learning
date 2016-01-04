@@ -11,6 +11,8 @@ pip install virtualenv
 
 para criar um ambiente virtual é necessário utilizar o comando:
 virtualenv --system-site-packages --always-copy <nome-do-ambiente-virtual>
+Pyhon 3:
+virtualenv --system-site-packages --always-copy -p python3<nome-do-ambiente-virtual>
 
 para inicializar o ambiente virtual criado no passo anterior, precisamos entar na pasta do ambiente criado e executar o comando:
 source bin/activate
@@ -40,4 +42,5 @@ target.readline()
 target.truncate()
 #escreve "stuff" no arquivo
 target.write('stuff')
+
 
